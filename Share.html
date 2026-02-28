@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="nav">
+        <span class="pName">EduNote</span>
+
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#email"><img src="imgs/email.png" alt="Email"></a></li>
+                <li><a href="#phone"><img src="imgs/phone.png" alt="Phone"></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<form id="uploadForm" onsubmit="handleUpload(event)">
+
+    <label for="collegeSelect">Choose the College:</label>
+    <select id="collegeSelect" required>
+        <option value="Engineering">College of Engineering and Computer Science</option>
+        <option value="Health">College of Health Science</option>
+        <option value="Science">College of Science</option>
+        <option value="Business">College of Business</option>
+        <option value="Law">College of Sharia and Law</option>
+        <option value="Arts">College of Arts and Humanities</option>
+    </select>
+
+    <label for="fileName">Note Name:</label>
+    <input type="text" id="fileName" placeholder="Enter note name" required>
+
+    <label for="fileInput">Select File:</label>
+    <input type="file" id="fileInput" accept="application/pdf" required>
+
+    <button type="submit">Upload</button>
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>

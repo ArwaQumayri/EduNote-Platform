@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduNote</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="nav">
+        <span class="pName">EduNote</span>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#AboutUs">About Us</a></li>
+                <li><a href="#Note">Notes</a></li>
+                <li><a href="loginpage.html">Login</a></li>
+                <li><a href="#email"><img src="imgs/email.png" alt="Email"></a></li>
+                <li><a href="#phone"><img src="imgs/phone.png" alt="Phone"></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<section id="home">
+    <div class="home-text">
+        <h1>EduNote</h1>
+        <p>Is a platform for sharing study notes among students.
+        Upload your notes or search for helpful study materials,
+        and be part of a learning community that supports academic success.</p>
+
+        <a href="#Share"><button class="home-button">Start Now</button></a>
+    </div>
+
+    <img src="imgs/home.png" alt="Home">
+</section>
+
+<header class="about-header">
+    <span class="pName">EduNote</span>
+    <div class="s-m">
+        <ul>
+            <li><a href="#email"><img src="imgs/emailabout.png" alt=""></a></li>
+            <li><a href="#phone"><img src="imgs/phoneabout.png" alt=""></a></li>
+        </ul>
+    </div>
+</header>
+
+<section id="AboutUs">
+    <img src="imgs/about.png" alt="about">
+
+    <div class="about-text">
+        <h1>Our Story</h1>
+
+        <p>We started with a simple goal: to make sharing study notes easier for students.
+        We believe that sharing knowledge enhances the academic experience for everyone.
+        What began as a small idea has now grown into a collaborative community
+        that supports students on their learning journey.</p>
+
+        <p><b>We started with a simple goal: to make sharing study notes easier for students.</b></p>
+    </div>
+</section>
+
+<header>
+    <div class="nav">
+        <span class="pName">EduNote</span>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#email"><img src="imgs/email.png" alt="Email"></a></li>
+                <li><a href="#phone"><img src="imgs/phone.png" alt="Phone"></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<section id="Note">
+    <div class="colleges">
+        <h1>Notes page</h1>
+
+        <div class="college-card">
+            <button class="prev" onclick="prev()">&#10094;</button>
+
+            <div class="cards">
+
+                <div class="card" id="college1">
+                    <img src="imgs/college1.png" alt="college1">
+                    <h2>College of Engineering and Computer Science</h2>
+                    <button onclick="viewCollegeNotes('Engineering')">click here</button>
+                </div>
+
+                <div class="card" id="college2">
+                    <img src="imgs/college2.png" alt="college2">
+                    <h2>College of Health Science</h2>
+                    <button onclick="viewCollegeNotes('Health')">click here</button>
+                </div>
+
+                <div class="card" id="college3">
+                    <img src="imgs/college3.png" alt="college3">
+                    <h2>College of Science</h2>
+                    <button onclick="viewCollegeNotes('Science')">click here</button>
+                </div>
+
+                <div class="card" id="college4">
+                    <img src="imgs/college4.png" alt="college4">
+                    <h2>College of Business</h2>
+                    <button onclick="viewCollegeNotes('Business')">click here</button>
+                </div>
+
+                <div class="card" id="college5">
+                    <img src="imgs/college5.png" alt="college5">
+                    <h2>College of Sharia and Law</h2>
+                    <button onclick="viewCollegeNotes('Sharia')">click here</button>
+                </div>
+
+                <div class="card" id="college6">
+                    <img src="imgs/college6.png" alt="college6">
+                    <h2>College of Arts and Humanities</h2>
+                    <button onclick="viewCollegeNotes('Arts')">click here</button>
+                </div>
+
+            </div>
+
+            <button class="next" onclick="next()">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</section>
+
+<header>
+    <div class="nav">
+        <span class="pName">EduNote</span>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#email"><img src="imgs/email.png" alt="Email"></a></li>
+                <li><a href="#phone"><img src="imgs/phone.png" alt="Phone"></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<section id="Share">
+    <div class="Share-text">
+        <h1>Share your Notes</h1>
+        <p><b>Share your study notes with your peers through this page.
+        Upload your notes to make them accessible to others and be part
+        of our collaborative learning community.</b></p>
+    </div>
+
+    <div class="Share-img">
+        <img src="imgs/Share your Notes .png" alt="Share-img">
+    </div>
+
+    <a href="Share.html"><button class="Share-button">From here</button></a>
+</section>
+
+</body>
+</html>

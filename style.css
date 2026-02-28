@@ -1,0 +1,492 @@
+.afacad-flux {
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f6fd;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+header {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 0.5px;
+    background-color: #021f3e;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 40px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #021f3e;
+}
+
+.nav-menu ul li img {
+    width: 20px;
+    height: auto;
+}
+
+.pName {
+    font-size: 20px;
+    color: #021f3e;
+}
+
+/* HOME SECTION */
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    height: 80vh;
+}
+
+#home h1, #home p {
+    font-size: 30px;
+    margin-left: 70px;
+    margin-right: 19px;
+    text-align: left;
+}
+
+#home h1 {
+    color: #333;
+    font-size: 35px;
+}
+
+#home p {
+    color: #713eda;
+}
+
+#home img {
+    margin-left: 20px;
+    margin-right: 40px;
+    width: 470px;
+    height: auto;
+}
+
+.home-button {
+    font-size: 20px;
+    margin-left: 70px;
+    background-color: #713eda;
+    color: #ffffff;
+    border: none;
+    padding: 9px 29px;
+    border-radius: 10px;
+}
+
+/* ABOUT SECTION */
+
+.about-header {
+    padding: 10px 20px;
+    margin-top: 25px;
+    background-color: #31245c;
+    position: relative;
+}
+
+.about-header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 0.5px;
+    background-color: #f8f6fd;
+}
+
+.about-header span {
+    margin-top: 25px;
+    margin-left: 40px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.about-header ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.about-header ul li img {
+    margin-top: 25px;
+    width: 20px;
+    height: auto;
+}
+
+#AboutUs {
+    background-color: #31245c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    height: 80vh;
+}
+
+#AboutUs img {
+    margin-left: 40px;
+    margin-right: 30px;
+    width: 490px;
+    height: auto;
+}
+
+#AboutUs h1, #AboutUs p {
+    padding-right: 30px;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: left;
+}
+
+#AboutUs h1 {
+    color: #713eda;
+}
+
+/* LOGIN & SIGNUP */
+
+#Login, #SignIn {
+    display: flex;
+    height: 100vh;
+}
+
+.left-part {
+    flex: 1;
+    background-color: #f8f6fd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.left-part h1 {
+    color: #713eda;
+}
+
+.left-part .pName {
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.right-part {
+    flex: 0.66;
+    background-color: #31245c;
+    color: #f8f6fd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.right-part ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.right-part ul li img {
+    width: 20px;
+    height: auto;
+}
+
+.right-part p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 90px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    padding: 15px 60px;
+    margin-top: 20px;
+    background-color: #713eda;
+    color: white;
+    border-color: white;
+    border-radius: 120px;
+    cursor: pointer;
+}
+
+button {
+    padding: 15px 70px;
+    background-color: #31245c;
+    color: white;
+    border-color: white;
+    border-radius: 120px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #713eda;
+}
+
+/* NOTES SECTION */
+
+#Note {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    text-align: center;
+}
+
+.colleges {
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.college-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cards {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.card {
+    background-color: #f8f6fd;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin: 0 10px;
+    width: 210px;
+    height: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 1rem;
+    min-height: 50px;
+    color: #333;
+}
+
+.card button {
+    align-self: stretch;
+    padding: 10px;
+    background-color: #713eda;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.prev, .next {
+    background-color: #713eda;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 1px;
+    height: 2px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+    padding: 20px;
+}
+
+.prev {
+    left: -20px;
+}
+
+.next {
+    right: -20px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #31245c;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #713eda;
+    margin-bottom: 50px;
+}
+
+/* SHARE SECTION */
+
+#Share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    height: 90vh;
+    width: auto;
+}
+
+.Share-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.Share-text h1 {
+    text-align: left;
+    flex: 1;
+    color: #713eda;
+    font-size: 1.8rem;
+}
+
+.Share-text p {
+    text-align: left;
+    flex: 1;
+    color: #333;
+    font-size: 1rem;
+}
+
+#Share img {
+    width: 85%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.Share-button {
+    background-color: #713eda;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Share-button:hover {
+    background-color: #31245c;
+}
+
+/* UPLOAD FORM */
+
+#uploadForm {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Afacad Flux', sans-serif;
+}
+
+#uploadForm label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+#collegeSelect, #fileName, #fileInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333;
+}
+
+#uploadForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #31245c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Afacad Flux', sans-serif;
+}
+
+#uploadForm button:hover {
+    background-color: #713eda;
+}
+
